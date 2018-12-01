@@ -1,0 +1,89 @@
+.wrap {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    font-family: 'Montserrat';
+}
+.wrap .formWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrap h1{
+    font-size: 3rem;
+}
+.wrap h1,
+.wrap img,
+.wrap .caption {
+    margin: 1rem;
+}
+.wrap input[type=text],
+.wrap input[type=email],
+.wrap input[type=password],
+.wrap input[type=submit],
+.wrap input[type=button],
+.wrap button,
+.wrap .submitButton,
+.submitButton {
+    padding: .7rem .7rem;
+    font-size: 1.42rem;
+    margin: 0.45rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrap input[type=email] {
+    text-transform: lowercase
+}
+
+.wrap input[type=text],
+.wrap input[type=email],
+.wrap input[type=password] {
+    width: 20rem;
+}
+
+.wrap input[type=submit],
+.wrap input[type=button], 
+.wrap button,
+.wrap .submitButton,
+.submitButton {
+    width: 21rem;
+    background: green;
+    background-color: green;
+    color: white;
+    font-family: 'Montserrat';
+    border: 0px;
+    cursor: pointer;
+}
+
+.wrap input[type=submit]:hover,
+.wrap input[type=button]:hover,
+.wrap .submitButton:hover,
+.submitButton:hover {
+    background: var(--primary-color-hover);
+}
+
+.wrap .passwordForgot{
+    width: 22rem;
+    margin-top: 2.52rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wrap .passwordForgot a,
+.wrap .passwordForgot a:link,
+.wrap .passwordForgot a:visited,
+.wrap .passwordForgot a:active {
+    font-family: sans-serif;
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+.wrap .passwordForgot a:hover {
+    text-decoration: underline;
+}
